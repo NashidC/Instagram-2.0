@@ -55,6 +55,10 @@
                             </button>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZHw-0D-Kd6">
                                 <rect key="frame" x="3" y="10" width="320" height="44"/>
+                                <color key="barTintColor" red="0.0" green="0.34558266018849937" blue="0.71646634615384608" alpha="0.69038254310344827" colorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </textAttributes>
                                 <items>
                                     <navigationItem title="Instagram " id="kNn-ri-Tmm"/>
                                 </items>
@@ -136,7 +140,7 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Instagram" id="XNh-nT-DPl">
-                        <barButtonItem key="leftBarButtonItem" title="Compose" id="DXl-3b-4Tl">
+                        <barButtonItem key="leftBarButtonItem" title="New" id="DXl-3b-4Tl">
                             <connections>
                                 <segue destination="On4-mv-xef" kind="presentation" id="S0A-dX-hDP"/>
                             </connections>
@@ -172,30 +176,35 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="thH-02-Fav">
                                 <rect key="frame" x="0.0" y="56" width="320" height="306"/>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pU4-vM-ojZ" userLabel="Caption View">
-                                <rect key="frame" x="0.0" y="407" width="320" height="72"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pU4-vM-ojZ" userLabel="Caption View">
+                                <rect key="frame" x="0.0" y="407" width="320" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dHe-do-iiW">
                                 <rect key="frame" x="0.0" y="12" width="320" height="44"/>
                                 <items>
-                                    <navigationItem title="Post Picture" id="uNt-uw-WuJ"/>
+                                    <navigationItem title="New Post " id="uNt-uw-WuJ"/>
                                 </items>
                             </navigationBar>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oos-MK-Hp2" userLabel="Send Button">
-                                <rect key="frame" x="142" y="501" width="36" height="30"/>
-                                <state key="normal" title="Send"/>
-                                <connections>
-                                    <action selector="sendButton:" destination="On4-mv-xef" eventType="touchUpInside" id="pjQ-KS-TZQ"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Add a caption" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bfF-64-38d">
                                 <rect key="frame" x="107" y="384" width="106" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oos-MK-Hp2" userLabel="Send Button">
+                                <rect key="frame" x="119" y="496" width="82" height="32"/>
+                                <color key="backgroundColor" red="0.0" green="0.3455826602" blue="0.71646634620000005" alpha="0.69038254310000002" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Upload">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="sendButton:" destination="On4-mv-xef" eventType="touchUpInside" id="pjQ-KS-TZQ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -211,4 +220,5 @@
             <point key="canvasLocation" x="671" y="366"/>
         </scene>
     </scenes>
+    <color key="tintColor" red="0.0" green="0.3455826602" blue="0.71646634620000005" alpha="0.69038254310000002" colorSpace="calibratedRGB"/>
 </document>
